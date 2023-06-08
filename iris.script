@@ -1,0 +1,14 @@
+    // unexpire passwords for dev mode
+    new $namespace
+    set $namespace = "%SYS"
+    do ##class(Security.Users).UnExpireUserPasswords("*")
+
+    // install webterminal
+    zpm "install webterminal"
+
+
+    // create FHIRREPO namespace
+    set $namespace = "HSLIB"
+    do ##class(HS.HC.Util.Installer).InstallFoundation("FHIRREPO")
+
+    halt

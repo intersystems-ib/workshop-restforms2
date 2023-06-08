@@ -1,0 +1,720 @@
+{
+	"info": {
+		"_postman_id": "3b94d302-8435-495a-804c-f89210e0bee3",
+		"name": "workshop RESTForms",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8116712"
+	},
+	"item": [
+		{
+			"name": "test",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "{{user}}",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "{{pass}}",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic X1NZU1RFTTpTWVM="
+					}
+				],
+				"url": {
+					"raw": "http://{{host}}:{{port}}/forms/test",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"forms",
+						"test"
+					]
+				},
+				"description": "Test request"
+			},
+			"response": []
+		},
+		{
+			"name": "info",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "{{user}}",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "{{pass}}",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic X1NZU1RFTTpTWVM="
+					}
+				],
+				"url": {
+					"raw": "http://{{host}}:{{port}}/forms/info",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"forms",
+						"info"
+					]
+				},
+				"description": "Get basic information"
+			},
+			"response": []
+		},
+		{
+			"name": "form/info",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "{{user}}",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "{{pass}}",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic X1NZU1RFTTpTWVM="
+					}
+				],
+				"url": {
+					"raw": "http://{{host}}:{{port}}/forms/form/info",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"forms",
+						"form",
+						"info"
+					]
+				},
+				"description": "Test request"
+			},
+			"response": []
+		},
+		{
+			"name": "form/info/all",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "{{user}}",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "{{pass}}",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic X1NZU1RFTTpTWVM="
+					}
+				],
+				"url": {
+					"raw": "http://{{host}}:{{port}}/forms/form/info/all",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"forms",
+						"form",
+						"info",
+						"all"
+					]
+				},
+				"description": "Get info about all forms"
+			},
+			"response": []
+		},
+		{
+			"name": "form/info/:class",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "{{user}}",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "{{pass}}",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic X1NZU1RFTTpTWVM="
+					}
+				],
+				"url": {
+					"raw": "http://{{host}}:{{port}}/forms/form/info/Form.Test.Person",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"forms",
+						"form",
+						"info",
+						"Form.Test.Person"
+					]
+				},
+				"description": "Get meta information about one class "
+			},
+			"response": []
+		},
+		{
+			"name": "form/object/:class/:id",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "{{user}}",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "{{pass}}",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic X1NZU1RFTTpTWVM="
+					}
+				],
+				"url": {
+					"raw": "http://{{host}}:{{port}}/forms/form/object/Form.Test.Person/1",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"forms",
+						"form",
+						"object",
+						"Form.Test.Person",
+						"1"
+					]
+				},
+				"description": "Get meta information about one class "
+			},
+			"response": []
+		},
+		{
+			"name": "form/object/:class/:id/:property",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "{{user}}",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "{{pass}}",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic X1NZU1RFTTpTWVM="
+					}
+				],
+				"url": {
+					"raw": "http://{{host}}:{{port}}/forms/form/object/Form.Test.Person/1/name",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"forms",
+						"form",
+						"object",
+						"Form.Test.Person",
+						"1",
+						"name"
+					]
+				},
+				"description": "Get meta information about one class "
+			},
+			"response": []
+		},
+		{
+			"name": "form/object/:class/:id",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "{{user}}",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "{{pass}}",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic X1NZU1RFTTpTWVM="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Alice\",\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/forms/form/object/Form.Test.Person/1",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"forms",
+						"form",
+						"object",
+						"Form.Test.Person",
+						"1"
+					]
+				},
+				"description": "Get meta information about one class "
+			},
+			"response": []
+		},
+		{
+			"name": "form/object/:class",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "{{user}}",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "{{pass}}",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic X1NZU1RFTTpTWVM="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"_class\": \"Form.Test.Person\",\n  \"_id\": 1,\n  \"name\": \"Bob\"\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/forms/form/object/Form.Test.Person",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"forms",
+						"form",
+						"object",
+						"Form.Test.Person"
+					]
+				},
+				"description": "Get meta information about one class "
+			},
+			"response": []
+		},
+		{
+			"name": "form/object/:class",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "{{user}}",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "{{pass}}",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic X1NZU1RFTTpTWVM="
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Charlie\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/forms/form/object/Form.Test.Person",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"forms",
+						"form",
+						"object",
+						"Form.Test.Person"
+					]
+				},
+				"description": "Get meta information about one class "
+			},
+			"response": []
+		},
+		{
+			"name": "form/object/:class/:id",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "{{user}}",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "{{pass}}",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic X1NZU1RFTTpTWVM="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/forms/form/object/Form.Test.Person/101",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"forms",
+						"form",
+						"object",
+						"Form.Test.Person",
+						"101"
+					]
+				},
+				"description": "Get meta information about one class "
+			},
+			"response": []
+		},
+		{
+			"name": "form/object/:class/:query",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "{{user}}",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "{{pass}}",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic X1NZU1RFTTpTWVM="
+					}
+				],
+				"url": {
+					"raw": "http://{{host}}:{{port}}/forms/form/objects/Form.Test.Person/info",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"forms",
+						"form",
+						"objects",
+						"Form.Test.Person",
+						"info"
+					]
+				},
+				"description": "Get meta information about one class "
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "localhost",
+			"type": "string"
+		},
+		{
+			"key": "port",
+			"value": "52773",
+			"type": "string"
+		},
+		{
+			"key": "user",
+			"value": "superuser",
+			"type": "string"
+		},
+		{
+			"key": "pass",
+			"value": "SYS",
+			"type": "string"
+		}
+	]
+}
